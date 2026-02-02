@@ -5,12 +5,13 @@ Dette repoet løser oppgaven med to mikrotjenester (server + klient) og en  dev-
 ---
 
 **Dette er kommandoen som starter “hele opplevelsen” (Grafana/Prometheus + Redis + Nginx reverse proxy):**
-
+Put in openrouter key i variabelen OPENROUTER_API_KEY i .env fila og kjør
 ```bash
 docker compose --profile obs --profile redis --profile edge up -d --build
 ```
-
+Åpne : http://localhost:8080/
 **Hovedgrensesnitt (Nginx reverse proxy):**
+
 - http://localhost:8080/
 
 Endepunkter via reverse proxy:
